@@ -12,7 +12,7 @@ async function appendToSheet(data){
 
     try {
         const auth = await google.auth.getClient({
-            keyFile: 'sheets/spreedsheet.json',
+            keyFile: './sheets/spreedsheet.json',
             scope: ['https://www.googleapis.com/auth/spreadsheets'],
         });
 
